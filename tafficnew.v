@@ -77,38 +77,38 @@ module  Traffic_Light_Controller_new(
                      
                     S_left:
                     begin
-                       light_path_left<=3'b001;
-                       light_path_right<=3'b010;
-                       light_straight<=3'b100;
-                       light_back<=3'b100;
+                       light_path_left=3'b001;
+                       light_path_right=3'b010;
+                       light_straight=3'b100;
+                       light_back=3'b100;
                     end
                     S_right:
                     begin 
-                       light_path_left<=3'b100;
-                       light_path_right<=3'b001;
-                       light_straight<=3'b010;
-                       light_back<=3'b100;
+                       light_path_left=3'b100;
+                       light_path_right=3'b001;
+                       light_straight=3'b010;
+                       light_back=3'b100;
                     end
                     S_straight:
                     begin
-                       light_path_left<=3'b100;
-                       light_path_right<=3'b100;
-                       light_straight<=3'b001;
-                       light_back<=3'b010;
+                       light_path_left=3'b100;
+                       light_path_right=3'b100;
+                       light_straight=3'b001;
+                       light_back=3'b010;
                     end
                     S_back:
                     begin
-                       light_path_left<=3'b010;
-                       light_path_right<=3'b100;
-                       light_straight<=3'b100;
-                       light_back<=3'b001;
+                       light_path_left=3'b010;
+                       light_path_right=3'b100;
+                       light_straight=3'b100;
+                       light_back=3'b001;
                     end
                     default:
                     begin 
-                       light_path_left<=3'b000;
-                       light_path_right<=3'b000;
-                       light_straight<=3'b000;
-                       light_back<=3'b000;
+                       light_path_left=3'b000;
+                       light_path_right=3'b000;
+                       light_straight=3'b000;
+                       light_back=3'b000;
                     end
                     endcase
             end                
