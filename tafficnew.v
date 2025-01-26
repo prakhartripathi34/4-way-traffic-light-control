@@ -36,7 +36,7 @@ module  Traffic_Light_Controller_new(
                 S_right : if(tme<=sec_right)
                             begin
                                 ps<=S_right;
-                                tme=tme+1;
+                                tme<=tme+1;
                             end
                             else
                             begin 
@@ -46,7 +46,7 @@ module  Traffic_Light_Controller_new(
                S_straight : if(tme<=sec_straight)
                             begin
                                 ps<=S_straight;
-                                tme=tme+1;
+                                tme<=tme+1;
                             end
                             else
                             begin 
@@ -56,7 +56,7 @@ module  Traffic_Light_Controller_new(
                 S_back : if(tme<=sec_back)
                             begin
                                 ps<=S_back;
-                                tme=tme+1;
+                                tme<=tme+1;
                             end
                             else
                             begin 
